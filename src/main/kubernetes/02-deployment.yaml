@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: userupdate
+  namespace: userupdate
+  labels:
+    app: userupdate
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: userupdate
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: userupdate
+    spec:
+      containers:
+      - image: ailtonmsj/userupdate-jvm:1.0.0
+        name: userupdate-jvm
+        imagePullPolicy: Always
+        resources: {}
+status: {}

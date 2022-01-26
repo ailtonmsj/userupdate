@@ -1,0 +1,23 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: userupdate
+  namespace: userupdate
+spec:
+  gateways:
+  - userupdate-gateway
+  hosts:
+  - '*'
+  http:
+  - match:
+    - uri:
+        prefix: /usuario
+      method:
+        exact: PUT
+    rewrite:
+      uri: /usuario
+    route:
+    - destination:
+        host: userupdate
+        port:
+          number: 8080
