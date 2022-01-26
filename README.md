@@ -19,14 +19,14 @@ docker push <SEU-DOCKERHUB-ID>/userupdate-jvm:1.0.0
 
 # Testando a aplicação:
 ```shell script
-curl --location --request POST 'http://<DNS-DO-SERVICO>/usuario' \
---header 'Content-Type: application/json' \
---data-raw '{
-    "nome" : "Teste",
-    "sobrenome" : "Da Silva",
-    "idade" : "30",
-    "pais" : "Brasil"
-}'
+curl --location --request PUT 'http://localhost:8080/usuario/NOME-USUARIO/STATUS-USUARIO' \
+--header 'Content-Type: application/json'
+```
+
+## Exemplo:
+```
+curl --location --request PUT 'http://localhost:8080/usuario/NOME-USUARIO/STATUS-USUARIO' \
+--header 'Content-Type: application/json'
 ```
 
 ## Aplicar os manifestos presentes em "src/main/kubernetes" para o deploy ocorrer:
