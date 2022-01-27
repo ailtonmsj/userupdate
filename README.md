@@ -95,6 +95,21 @@ quarkus.dynamodb.aws.region=<USAR-A-LOCALIZACAO-DO-DYNAMODB>
 quarkus.dynamodb.aws.credentials.type=default
 ```
 
+# Códigos de Resposta
+
+### 200 - OK - Usuario Adicionado com Sucesso
+### 400 - Bad Request - Rever parametros de entrada
+### 500 - Server Erro - Erro no Servidor de aplicação
+
+<br />
+
+# Aplicações Relacionadas:
+
+### https://github.com/ailtonmsj/userlist
+### https://github.com/ailtonmsj/useradd
+
+<br />
+
 ### SmallRye Health
 
 Monitor your application's health using SmallRye Health

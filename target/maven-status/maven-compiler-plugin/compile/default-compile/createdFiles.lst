@@ -1,5 +1,0 @@
-br/com/ailtonmsj/service/UsuarioService.class
-br/com/ailtonmsj/dto/Usuario.class
-br/com/ailtonmsj/health/LivenessCheck.class
-br/com/ailtonmsj/service/AbstractUsuarioService.class
-br/com/ailtonmsj/health/ReadinessCheck.class
